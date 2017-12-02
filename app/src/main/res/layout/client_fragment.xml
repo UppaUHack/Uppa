@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/clientTxtName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="sans-serif"
+        android:text="Name:"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/clientInputName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clientTxtName3"
+        android:layout_alignBottom="@+id/clientTxtName3"
+        android:layout_marginStart="33dp"
+        android:layout_toEndOf="@+id/clientTxtName3"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/clientTxtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clientInputAge"
+        android:layout_alignBottom="@+id/clientInputAge"
+        android:layout_alignStart="@+id/clientTxtName3"
+        android:text="Username:" />
+
+    <EditText
+        android:id="@+id/clientInputAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientInputName"
+        android:layout_below="@+id/clientInputName"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/clientTxtBday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientTxtUsername"
+        android:layout_below="@+id/clientInputAge"
+        android:layout_marginTop="12dp"
+        android:text="Birthday:" />
+
+    <EditText
+        android:id="@+id/clientInputBday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/clientInputAge"
+        android:layout_below="@+id/clientInputAge"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/clientTxtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientTxtBday"
+        android:layout_below="@+id/clientInputBday"
+        android:layout_marginTop="16dp"
+        android:text="Address:" />
+
+    <EditText
+        android:id="@+id/clientInputAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/clientInputBday"
+        android:layout_below="@+id/clientInputBday"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/clientTxtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientTxtAddress"
+        android:layout_below="@+id/clientInputAddress"
+        android:layout_marginTop="12dp"
+        android:text="Gender:" />
+
+    <RadioButton
+        android:id="@+id/clientMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clientTxtGender"
+        android:layout_alignBottom="@+id/clientTxtGender"
+        android:layout_alignStart="@+id/clientInputAddress"
+        android:text="Male" />
+
+    <RadioButton
+        android:id="@+id/clientFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clientMale"
+        android:layout_alignBottom="@+id/clientMale"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/clientMale"
+        android:text="Female" />
+
+    <TextView
+        android:id="@+id/clientTxtContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientTxtGender"
+        android:layout_below="@+id/clientMale"
+        android:layout_marginTop="12dp"
+        android:text="Contact No.:" />
+
+    <EditText
+        android:id="@+id/clientInputContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/clientInputAddress"
+        android:layout_below="@+id/clientMale"
+        android:layout_toEndOf="@+id/clientTxtContact"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/clientTxtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientTxtContact"
+        android:layout_below="@+id/clientInputContact"
+        android:layout_marginTop="12dp"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/clientInputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientMale"
+        android:layout_below="@+id/clientInputContact"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/clientTxtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientTxtEmail"
+        android:layout_below="@+id/clientInputEmail"
+        android:layout_marginTop="12dp"
+        android:text="Password:" />
+
+    <EditText
+        android:id="@+id/clientInputPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientInputEmail"
+        android:layout_below="@+id/clientInputEmail"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/clientRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clientInputPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="REGISTER" />
+
+
+</RelativeLayout>

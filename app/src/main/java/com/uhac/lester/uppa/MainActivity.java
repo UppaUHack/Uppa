@@ -4,15 +4,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Handler;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import android.widget.ImageView;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
-
+	private static int SPLASH_TIME_OUT = 2000;
     private Button mSendData;
     private DatabaseReference mRef;
     private FirebaseAuth mAuth;
@@ -21,7 +27,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        new Handler().postDelayed(new Runnable(){
+            @Override
+            public void run(){
+                Intent homeIntent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(homeIntent);
+                finish();
+            }
+        },SPLASH_TIME_OUT);
+		FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         mRef = FirebaseDatabase.getInstance().getReference();
         mSendData = (Button) findViewById(R.id.fire);
         mSendData.setOnClickListener(new View.OnClickListener(){

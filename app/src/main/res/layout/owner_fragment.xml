@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/ownerTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="sans-serif"
+        android:text="Name:"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ownerInputName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ownerTxtName"
+        android:layout_alignBottom="@+id/ownerTxtName"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/ownerTxtName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/ownerTxtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerTxtName"
+        android:layout_below="@+id/ownerInputName"
+        android:layout_marginTop="13dp"
+        android:text="Username:" />
+
+    <EditText
+        android:id="@+id/ownerInputAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ownerInputName"
+        android:layout_below="@+id/ownerInputName"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/ownerTxtBday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerTxtUsername"
+        android:layout_below="@+id/ownerInputAge"
+        android:layout_marginTop="11dp"
+        android:text="Birthday:" />
+
+    <EditText
+        android:id="@+id/ownerInputBday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerInputAge"
+        android:layout_below="@+id/ownerInputAge"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/ownerTxtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerTxtBday"
+        android:layout_below="@+id/ownerInputBday"
+        android:layout_marginTop="15dp"
+        android:text="Address:" />
+
+    <EditText
+        android:id="@+id/ownerInputAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ownerInputBday"
+        android:layout_below="@+id/ownerInputBday"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/ownerTxtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerTxtAddress"
+        android:layout_below="@+id/ownerInputAddress"
+        android:layout_marginTop="11dp"
+        android:text="Gender:" />
+
+    <RadioButton
+        android:id="@+id/ownerMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ownerTxtGender"
+        android:layout_alignBottom="@+id/ownerTxtGender"
+        android:layout_alignStart="@+id/ownerInputAddress"
+        android:text="Male" />
+
+    <RadioButton
+        android:id="@+id/ownerFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ownerMale"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/ownerMale"
+        android:text="Female" />
+
+    <TextView
+        android:id="@+id/ownerTxtContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerTxtGender"
+        android:layout_below="@+id/ownerMale"
+        android:layout_marginTop="12dp"
+        android:text="Contact No.:" />
+
+    <EditText
+        android:id="@+id/ownerInputContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerMale"
+        android:layout_below="@+id/ownerMale"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/ownerTxtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerTxtContact"
+        android:layout_below="@+id/ownerInputContact"
+        android:layout_marginTop="13dp"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/ownerInputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerInputContact"
+        android:layout_below="@+id/ownerInputContact"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/ownerTxtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerTxtEmail"
+        android:layout_below="@+id/ownerInputEmail"
+        android:layout_marginTop="11dp"
+        android:text="Password:" />
+
+    <EditText
+        android:id="@+id/ownerInputPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ownerInputEmail"
+        android:layout_below="@+id/ownerInputEmail"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <TextView
+        android:id="@+id/ownerTxtBAN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ownerInputBAN"
+        android:layout_alignBottom="@+id/ownerInputBAN"
+        android:layout_toStartOf="@+id/ownerInputBAN"
+        android:text="Bank Account No.:" />
+
+    <EditText
+        android:id="@+id/ownerInputBAN"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/ownerInputPass"
+        android:layout_below="@+id/ownerInputPass"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/ownerRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ownerInputBAN"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTER" />
+
+
+</RelativeLayout>
