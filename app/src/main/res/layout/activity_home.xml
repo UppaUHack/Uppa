@@ -2,28 +2,28 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation = "vertical"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context = "com.uhac.lester.uppa.HomeActivity">
+    tools:context="com.enterprise.uppa.com.mainwindow.HomeActivity">
 
 
-    <TextView
-        android:id="@+id/txtWelcome"
-        android:layout_width="145dp"
-        android:layout_height="51dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/txtEmail"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        android:text="Welcome"
-        android:textSize="36sp"/>
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/uppalogo" />
 
     <TextView
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/inputEmail"
         android:layout_alignStart="@+id/inputEmail"
-        android:layout_below="@+id/txtWelcome"
-        android:layout_marginTop="52dp"
+        android:fontFamily="@font/itim"
         android:text="Email:"
         android:textSize="18sp" />
 
@@ -31,8 +31,8 @@
         android:id="@+id/inputEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtEmail"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textEmailAddress" />
 
@@ -40,8 +40,9 @@
         android:id="@+id/txtPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/inputPass"
         android:layout_alignStart="@+id/inputEmail"
-        android:layout_below="@+id/inputEmail"
+        android:fontFamily="@font/itim"
         android:text="Password:"
         android:textSize="18sp" />
 
@@ -49,8 +50,8 @@
         android:id="@+id/inputPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLogin"
         android:layout_alignStart="@+id/txtPass"
-        android:layout_below="@+id/txtPass"
         android:ems="10"
         android:inputType="textPassword" />
 
@@ -58,32 +59,37 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/txtAccount"
         android:layout_alignEnd="@+id/inputPass"
         android:layout_alignStart="@+id/inputPass"
-        android:layout_below="@+id/inputPass"
-        android:layout_marginTop="13dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/itim"
         android:text="LOGIN" />
 
     <TextView
         android:id="@+id/txtAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/txtWelcome"
-        android:layout_below="@+id/btnLogin"
-        android:layout_marginTop="20dp"
-        android:text="Don't have an account?"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
         android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/itim"
+        android:text="Don't have an account?"
         android:textSize="14sp" />
 
     <TextView
         android:id="@+id/txtGuest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtAccount"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:text="Enter as Guest?"
+        android:layout_marginBottom="36dp"
         android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/itim"
+        android:text="Enter as Guest?"
         android:textSize="14sp" />
 
 </RelativeLayout>

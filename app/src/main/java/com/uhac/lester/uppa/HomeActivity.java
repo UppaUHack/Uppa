@@ -27,12 +27,23 @@ public class HomeActivity extends AppCompatActivity {
     private DatabaseReference usersRef;
     private DatabaseReference user1Ref;
     private DatabaseReference passRef;
-
+	private TextView txtAccount;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        email = (EditText) (findViewById(R.id.inputEmail));
+        
+		txtAccount = (TextView) (findViewById(R.id.txtAccount));
+        txtAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, Register.class);
+                startActivity(intent);
+            }
+        });
+		
+		email = (EditText) (findViewById(R.id.inputEmail));
         pass = (EditText) (findViewById(R.id.inputPass));
 
         login = (Button) (findViewById(R.id.btnLogin));
