@@ -5,7 +5,7 @@
     android:orientation = "vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.enterprise.uppa.com.mainwindow.HomeActivity">
+    tools:context = "com.uhac.lester.uppa.HomeActivity">
 
 
     <TextView
@@ -14,7 +14,6 @@
         android:layout_height="51dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
-        android:fontFamily="@font/itim"
         android:text="Welcome"
         android:textSize="36sp"/>
 
@@ -25,7 +24,6 @@
         android:layout_alignStart="@+id/inputEmail"
         android:layout_below="@+id/txtWelcome"
         android:layout_marginTop="52dp"
-        android:fontFamily="@font/itim"
         android:text="Email:"
         android:textSize="18sp" />
 
@@ -44,7 +42,6 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/inputEmail"
         android:layout_below="@+id/inputEmail"
-        android:fontFamily="@font/itim"
         android:text="Password:"
         android:textSize="18sp" />
 
@@ -65,7 +62,6 @@
         android:layout_alignStart="@+id/inputPass"
         android:layout_below="@+id/inputPass"
         android:layout_marginTop="13dp"
-        android:fontFamily="@font/itim"
         android:text="LOGIN" />
 
     <TextView
@@ -75,7 +71,6 @@
         android:layout_alignEnd="@+id/txtWelcome"
         android:layout_below="@+id/btnLogin"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/itim"
         android:text="Don't have an account?"
         android:clickable="true"
         android:textSize="14sp" />
@@ -87,7 +82,6 @@
         android:layout_below="@+id/txtAccount"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:fontFamily="@font/itim"
         android:text="Enter as Guest?"
         android:clickable="true"
         android:textSize="14sp" />

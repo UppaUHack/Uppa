@@ -32,17 +32,21 @@ public class Users extends Application{
     private Button mLoginButton;
     private String phoneNumber = "09953203700";
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
-    private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth; 
+    private String userId, name, birthDate, gender, contact, email, pass, userType, address;
 
-    public Users(){
-        int userId;
-        String name;
-        String birthDate;
-        String gender;
-        String contact;
-        String email;
-        String pass;
-        int userType;
+
+
+    public Users(String uAddress, String uBday, String uContact, String uEmail, String uGender, String uId, String uName, String uPass, String uType){
+        address = uAddress;
+        birthDate =uBday;
+        contact = uContact;
+        email = uEmail;
+        gender = uGender;
+        userId = uId;
+        name = uName;
+        pass = uPass;
+        userType = uType;
     }
     public void addUser(){
 
@@ -63,12 +67,22 @@ public class Users extends Application{
 
     }
 
-    public void register() {
+    public void register(String name, String birthday, String address, String gender, String contact, String email, String password, int userType) {
+
+        mAuth = FirebaseAuth.getInstance();
 
 
+    }
 
+    public void login(String mobileNumber, String password){
+
+    }
+
+    public String getEmail(){
+        return email;
     }
 
 
 
 }
+   
