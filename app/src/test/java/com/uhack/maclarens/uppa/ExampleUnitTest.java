@@ -1,4 +1,4 @@
-package com.uhac.lester.uppa;
+package com.uhack.maclarens.uppa;
 
 import org.junit.Test;
 

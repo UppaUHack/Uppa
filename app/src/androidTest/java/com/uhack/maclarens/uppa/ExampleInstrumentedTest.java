@@ -1,4 +1,4 @@
-package com.uhac.lester.uppa;
+package com.uhack.maclarens.uppa;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.uhac.lester.uppa", appContext.getPackageName());
+        assertEquals("com.uhack.maclarens.uppa", appContext.getPackageName());
     }
 }
