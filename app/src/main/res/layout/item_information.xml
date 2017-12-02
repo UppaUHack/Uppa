@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/item_image2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/item_name2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/ic_menu_camera"/>
+     <TextView
+         android:id="@+id/item_price2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/item_image2"
+         android:layout_centerHorizontal="true"
+         android:text="Price"
+         android:textColor="@color/colorAccent"
+         android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/item_location2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_price2"
+        android:layout_centerHorizontal="true"
+        android:text="Location"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/item_status2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_location2"
+        android:layout_centerHorizontal="true"
+        android:text="Status"
+        android:textColor="#bebebe"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/item_desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_status2"
+        android:layout_centerHorizontal="true"
+        android:text="Description"
+        android:textColor="#bebebe"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/add_cart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/item_image2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/icon_cart" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/item_desc2"
+        android:layout_marginTop="10dp"
+        android:layout_height="4dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/header_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider1"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:text="Reviews and Statistics"/>
+
+    <ImageView
+        android:id="@+id/item_ratings2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/header_stats"
+        android:layout_marginLeft="20dp"
+        android:layout_toStartOf="@+id/item_desc2"
+        android:background="@android:color/holo_orange_dark" />
+
+    <TextView
+        android:id="@+id/stats_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_ratings2"
+        android:paddingTop="15dp"
+        android:paddingLeft="35dp"
+        android:text="Success Rate:"/>
+    <TextView
+        android:id="@+id/stats_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stats_success"
+        android:paddingLeft="35dp"
+        android:text="Cancel Rate: "/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/stats_cancel"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/review_list"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom ="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:dividerHeight="10dp"-->
+            <!--android:divider="#d1d1d1">-->
+        <!--</ListView>-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
