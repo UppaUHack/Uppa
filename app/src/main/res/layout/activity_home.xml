@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation = "vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.enterprise.uppa.com.mainwindow.HomeActivity">
+
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/itim"
+        android:text="Welcome"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inputEmail"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/itim"
+        android:text="Email:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inputEmail"
+        android:layout_below="@+id/inputEmail"
+        android:fontFamily="@font/itim"
+        android:text="Password:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtPass"
+        android:layout_below="@+id/txtPass"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/inputPass"
+        android:layout_alignStart="@+id/inputPass"
+        android:layout_below="@+id/inputPass"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/itim"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/txtAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtWelcome"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/itim"
+        android:text="Don't have an account?"
+        android:clickable="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/itim"
+        android:text="Enter as Guest?"
+        android:clickable="true"
+        android:textSize="14sp" />
+
+</RelativeLayout>
