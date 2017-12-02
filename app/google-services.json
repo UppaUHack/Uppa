@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "609152332851",
+    "firebase_url": "https://uppa-cf819.firebaseio.com",
+    "project_id": "uppa-cf819",
+    "storage_bucket": "uppa-cf819.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609152332851:android:f8a70a78c1dbd782",
+        "android_client_info": {
+          "package_name": "com.uhac.lester.uppa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609152332851-3ht9m06b03figf5pava6i5b4u7vkqg4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uhac.lester.uppa",
+            "certificate_hash": "c19f6c02302a7522e452fc6cf6348e4026e6d7e1"
+          }
+        },
+        {
+          "client_id": "609152332851-4ipe6c9n8iuhmaqo2p028qopcd2mg0ii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ6OBpkzzg41AiE3VZscADdavfrf1BDLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609152332851-4ipe6c9n8iuhmaqo2p028qopcd2mg0ii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
