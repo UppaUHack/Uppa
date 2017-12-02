@@ -40,7 +40,8 @@ public class HomeActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Users user = new Users("dfgdfgdfgdfgdg", "SAD", "AS", "as", "ASA", "asa", "AsA", "saSA", "asd");
+                user.register();
                 emailVal = email.getText().toString();
                 passVal = pass.getText().toString();
                 Log.d("Email", emailVal);

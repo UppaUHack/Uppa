@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -36,12 +37,19 @@ public class MainActivity extends AppCompatActivity {
                 mRootRef.child("Id").setValue("234");
                 mRootRef.child("Password").setValue("pass");
                 */
-                Users user = new Users();
-                user.addUser();
+//                Users user = new Users();
+//                user.addUser();
 
                 Items item1 = new Items("spatula", "Maganda talaga siya", 23.3432, 4532.564, "500.00", 59.7);
                 item1.addItem();
             }
         });
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
     }
 }
