@@ -1,4 +1,4 @@
-package com.testapp.user.uppa;
+package com.uhack.maclarens.uppa;
 
 import android.content.Context;
 import android.content.res.Resources;

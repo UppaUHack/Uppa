@@ -1,7 +1,6 @@
 package com.uhack.maclarens.uppa;
 
 import android.content.Intent;
-import android.location.Location;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -18,7 +17,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity
+public class Browse extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public static String  selectedName;
@@ -34,18 +33,15 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browse);
 
-        // TOOLBAR
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       // DRAWER LAYOUT
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        // NAVIGATION VIEW
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -79,13 +75,11 @@ public class MainActivity extends AppCompatActivity
                 selectedDesc = RentItems.get(position).getDescription();
                 selectedLocation = RentItems.get(position).getLocation();
 
-                Intent startItemInformation = new Intent(MainActivity.this, ItemInformationTab.class);
+                Intent startItemInformation = new Intent(Browse.this, ItemInformationTab.class);
                 startActivity(startItemInformation);
             }
         });
-
     }
-
 
     @Override
     public void onBackPressed() {
@@ -128,32 +122,32 @@ public class MainActivity extends AppCompatActivity
         switch (id){
 
             case R.id.nav_browse:
-                Intent browse= new Intent(MainActivity.this,Browse.class);
+                Intent browse= new Intent(Browse.this,Browse.class);
                 startActivity(browse);
                 break;
 
             case R.id.nav_category:
-                Intent category= new Intent(MainActivity.this,Category.class);
+                Intent category= new Intent(Browse.this,Category.class);
                 startActivity(category);
                 break;
 
             case R.id.nav_mapitems:
-                Intent mapitems= new Intent(MainActivity.this,MapItems.class);
+                Intent mapitems= new Intent(Browse.this,MapItems.class);
                 startActivity(mapitems);
                 break;
 
             case R.id.nav_mycart:
-                Intent mycart= new Intent(MainActivity.this,MyCart.class);
+                Intent mycart= new Intent(Browse.this,MyCart.class);
                 startActivity(mycart);
                 break;
 
             case R.id.nav_settings:
-                Intent settings= new Intent(MainActivity.this,Settings.class);
+                Intent settings= new Intent(Browse.this,Settings.class);
                 startActivity(settings);
                 break;
 
             case R.id.nav_aboutuppa:
-                Intent about= new Intent(MainActivity.this,AboutUppa.class);
+                Intent about= new Intent(Browse.this,AboutUppa.class);
                 startActivity(about);
                 break;
         }
@@ -162,5 +156,4 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 }

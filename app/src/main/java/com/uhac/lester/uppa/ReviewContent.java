@@ -1,5 +1,4 @@
-package com.testapp.user.uppa;
-
+package com.uhack.maclarens.uppa;
 import android.media.Image;
 
 import java.io.File;

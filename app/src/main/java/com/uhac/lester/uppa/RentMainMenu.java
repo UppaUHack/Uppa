@@ -1,9 +1,10 @@
-package com.testapp.user.uppa;
+package com.uhack.maclarens.uppa;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,7 +17,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RentMainMenu extends Activity {
+public class RentMainMenu extends AppCompatActivity {
 
     public static String  selectedName;
     public static Double selectedPrice;
@@ -28,7 +29,7 @@ public class RentMainMenu extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_rent_main_menu);
+        setContentView(R.layout.content_browse);
 
         lvRentList = (ListView)findViewById(R.id.rent_list);
         RentItems = new ArrayList<>();
